@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecaptchaMVCSample", "RecaptchaMVCSample\RecaptchaMVCSample.csproj", "{D5620322-A25B-4FB3-81C6-96AE0371F883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecaptchaWebFormSample", "RecaptchaWebFormSample\RecaptchaWebFormSample.csproj", "{CD7EE666-B960-4B26-9AF2-7ADC02A77346}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs20
+		SccProjectUniqueName0 = RecaptchaMVCSample\\RecaptchaMVCSample.csproj
+		SccProjectName0 = RecaptchaMVCSample
+		SccAuxPath0 = https://tfs.codeplex.com/tfs/tfs20
+		SccLocalPath0 = RecaptchaMVCSample
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = RecaptchaWebFormSample\\RecaptchaWebFormSample.csproj
+		SccProjectName1 = RecaptchaWebFormSample
+		SccAuxPath1 = https://tfs.codeplex.com/tfs/tfs20
+		SccLocalPath1 = RecaptchaWebFormSample
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5620322-A25B-4FB3-81C6-96AE0371F883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5620322-A25B-4FB3-81C6-96AE0371F883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5620322-A25B-4FB3-81C6-96AE0371F883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5620322-A25B-4FB3-81C6-96AE0371F883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7EE666-B960-4B26-9AF2-7ADC02A77346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7EE666-B960-4B26-9AF2-7ADC02A77346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7EE666-B960-4B26-9AF2-7ADC02A77346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7EE666-B960-4B26-9AF2-7ADC02A77346}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
