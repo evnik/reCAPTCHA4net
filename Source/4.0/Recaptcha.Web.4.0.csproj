@@ -36,10 +36,11 @@
     <DocumentationFile>bin\Release\Recaptcha.Web.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Recaptcha.Web.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -81,33 +82,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Recaptcha.Web\Mvc\RecaptchaMvcExtensions.cs">
-      <Link>Mvc\RecaptchaMvcExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\RecaptchaHtmlHelper.cs">
-      <Link>RecaptchaHtmlHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\RecaptchaKeyHelper.cs">
-      <Link>RecaptchaKeyHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\RecaptchaTheme.cs">
-      <Link>RecaptchaTheme.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\RecaptchaVerificationHelper.cs">
-      <Link>RecaptchaVerificationHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\RecaptchaVerificationResult.cs">
-      <Link>RecaptchaVerificationResult.cs</Link>
-    </Compile>
-    <Compile Include="..\Recaptcha.Web\UI\Controls\Recaptcha.cs">
-      <Link>UI\Controls\Recaptcha.cs</Link>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Recaptcha.Web.pfx" />
+    <Folder Include="Properties\" />
   </ItemGroup>
+  <Import Project="..\Recaptcha.Web\Recaptcha.Web.projitems" Label="Shared" Condition="Exists('..\Recaptcha.Web\Recaptcha.Web.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
