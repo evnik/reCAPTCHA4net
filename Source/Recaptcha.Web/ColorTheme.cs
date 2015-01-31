@@ -4,23 +4,22 @@
  * =========================================================================================================================== */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Recaptcha.Web
 {
-    internal class RecaptchaKeyHelper
+    /// <summary>
+    /// Represents the color theme of the reCAPTCHA widget as defined at https://developers.google.com/recaptcha/docs/display#config.
+    /// </summary>
+    public enum ColorTheme
     {
-        internal static string ParseKey(string key)
-        {
-            if (key.StartsWith("{") && key.EndsWith("}"))
-            {
-                return System.Configuration.ConfigurationManager.AppSettings[key.Trim().Substring(1, key.Length - 2)];
-            }
+        /// <summary>
+        /// The widget is dark.
+        /// </summary>
+        Dark = 1,
 
-            return key;
-        }
+        /// <summary>
+        /// The widget is light.
+        /// </summary>
+        Light = 2
     }
 }

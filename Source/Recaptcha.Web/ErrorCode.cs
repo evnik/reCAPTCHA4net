@@ -8,29 +8,38 @@ using System;
 namespace Recaptcha.Web
 {
     /// <summary>
-    /// Represents the themes used to render the reCAPTCHA HTML.
+    /// Represents values of the error code as defined at https://developers.google.com/recaptcha/docs/verify.
     /// </summary>
-    [Obsolete("Use ColorTheme enumeration to set a color theme, which is supported by the current version of API.")]
-    public enum RecaptchaTheme
+    public enum ErrorCode
     {
         /// <summary>
-        /// The theme is red.
+        /// No error is found.
         /// </summary>
-        Red = 0,
+        NoError = 0,
 
         /// <summary>
-        /// The theme is black glass.
+        /// Verification is failed but the exact reason is unknown.
         /// </summary>
-        Blackglass = 1,
+        Unknown = 1,
 
         /// <summary>
-        /// The theme is white.
+        /// The secret parameter is missing.
         /// </summary>
-        White = 2,
+        MissingInputSecret = 1 << 1,
 
         /// <summary>
-        /// The theme is clean.
+        /// The secret parameter is invalid or malformed.
         /// </summary>
-        Clean = 3
+        InvalidInputSecret = 1 << 2,
+
+        /// <summary>
+        /// The response parameter is missing.
+        /// </summary>
+        MissingInputResponse = 1 << 3,
+
+        /// <summary>
+        /// The response parameter is invalid or malformed.
+        /// </summary>
+        InvalidInputResponse = 1 << 4
     }
 }
