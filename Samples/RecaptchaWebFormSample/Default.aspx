@@ -6,7 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Recaptcha for .NET - ASP.NET Web Forms Sample</title>
+    <title>reCAPTCHA4net - ASP.NET Web Forms Sample</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,7 +35,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <!-- Render recaptcha with the default look and feel. -->
+                <!-- Render reCAPTCHA widget with the default look and feel. -->
                 <cc1:Recaptcha ID="Recaptcha1" runat="server" />
             </td>
         </tr>
