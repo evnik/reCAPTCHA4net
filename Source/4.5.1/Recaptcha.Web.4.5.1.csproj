@@ -95,6 +95,9 @@
   </ItemGroup>
   <Import Project="..\Recaptcha.Web\Recaptcha.Web.projitems" Label="Shared" Condition="Exists('..\Recaptcha.Web\Recaptcha.Web.projitems')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY /Y "$(TargetPath)" "$(SolutionDir)..\bin\$(ProjectName)\"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
