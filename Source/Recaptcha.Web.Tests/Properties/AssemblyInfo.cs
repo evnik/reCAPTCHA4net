@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿// Copyright (c) Eugene Berdnikov. See License.txt in the project root for license information.
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Recaptcha.Web.Tests")]

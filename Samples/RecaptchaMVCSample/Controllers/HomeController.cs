@@ -1,7 +1,4 @@
-﻿/* ============================================================================================================================
- * THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
- * LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
- * =========================================================================================================================== */
+﻿// Copyright (c) Eugene Berdnikov. See License.txt in the project root for license information.
 
 using Recaptcha.Web.Mvc;
 using RecaptchaMVCSample.Models;

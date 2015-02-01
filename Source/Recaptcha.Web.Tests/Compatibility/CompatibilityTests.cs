@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Eugene Berdnikov. See License.txt in the project root for license information.
+
+using System;
 
 namespace Recaptcha.Web.Tests.Compatibility
 {
