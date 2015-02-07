@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>reCAPTCHA4net</id>
+    <version>2.0.1</version>
+    <title>reCAPTCHA4net</title>
+    <authors>Eugene Berdnikov</authors>
+    <description>reCAPTCHA4net allows to easily integrate Google reCAPTCHA (the most popular CAPTCHA service) into ASP.NET web application (both Web Forms or ASP.NET MVC are supported). It supports updated reCAPTCHA API, which provides the No CAPTCHA experience.</description>
+    <releaseNotes>
+      v2.0.1
+      Initial public release of reCAPTCHA4net.
+      Support of the new reCAPTCHA API version called "No CAPTCHA" is implemented.
+    </releaseNotes>
+    <summary>Quickly add reCAPTCHA in an ASP.NET Web Forms or ASP.NET MVC web application.</summary>
+    <language>en-US</language>
+    <projectUrl>https://reCAPTCHA4net.codeplex.com/</projectUrl>
+    <licenseUrl>http://reCAPTCHA4net.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="AspNetMvc" version="4.0.20710.0" />
+        <dependency id="Newtonsoft.Json" version="6.0.7" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.0" />
+        <dependency id="Newtonsoft.Json" version="6.0.7" />
+      </group>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="Microsoft.AspNet.Mvc" version="5.2.0" />
+        <dependency id="Newtonsoft.Json" version="6.0.7" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5.1" />
+    </frameworkAssemblies>
+    <tags>reCAPTCHA CAPTCHA ASP.NET MVC</tags>
+  </metadata>
+  <files>
+    <file src="web.config.transform" target="content" />
+    <file src="..\..\bin\Recaptcha.Web.4.0\Recaptcha.Web.dll" target="lib\net40" />
+    <file src="..\..\bin\Recaptcha.Web.4.5\Recaptcha.Web.dll" target="lib\net45" />
+    <file src="..\..\bin\Recaptcha.Web.4.5.1\Recaptcha.Web.dll" target="lib\net451" />
+  </files>
+</package>

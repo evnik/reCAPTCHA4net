@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{062DFF05
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recaptcha.Web.Tests", "Recaptcha.Web.Tests\Recaptcha.Web.Tests.csproj", "{94874714-C2F0-477C-9B20-FB541BAD80C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{59B24242-128A-496C-8FD5-65C6FA31E46C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\reCAPTCHA4net.nuspec = .nuget\reCAPTCHA4net.nuspec
+		.nuget\web.config.transform = .nuget\web.config.transform
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Recaptcha.Web\Recaptcha.Web.projitems*{68721a31-5d23-4019-9763-8c65878ee35e}*SharedItemsImports = 13
