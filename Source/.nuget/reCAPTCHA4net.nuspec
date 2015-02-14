@@ -2,14 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>reCAPTCHA4net</id>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <title>reCAPTCHA4net</title>
     <authors>Eugene Berdnikov</authors>
     <description>reCAPTCHA4net allows to easily integrate Google reCAPTCHA (the most popular CAPTCHA service) into ASP.NET web application (both Web Forms or ASP.NET MVC are supported). It supports updated reCAPTCHA API, which provides the No CAPTCHA experience.</description>
     <releaseNotes>
-      v2.0.1
-      Initial public release of reCAPTCHA4net.
-      Support of the new reCAPTCHA API version called "No CAPTCHA" is implemented.
+      v2.0.2
+      Ability to pass Fallback parameter is added.
+      Parsing of Error Codes from reCAPTCHA response is fixed.
+      Support of &lt;noscript&gt; HTML is implemented.
     </releaseNotes>
     <summary>Quickly add reCAPTCHA in an ASP.NET Web Forms or ASP.NET MVC web application.</summary>
     <language>en-US</language>
